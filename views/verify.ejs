@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Hash</title>
+</head>
+<body>
+    <h1>Verify PDF Integrity</h1>
+    <form action="/hash/verify" method="post" enctype="multipart/form-data">
+        <label for="publicHash">Public Hash:</label>
+        <input type="text" name="publicHash" id="publicHash" required>
+        <br>
+        <label for="pdf">Upload PDF:</label>
+        <input type="file" name="pdf" id="pdf" required>
+        <br>
+        <button type="submit">Verify Hash</button>
+    </form>
+</body>
+</html>
